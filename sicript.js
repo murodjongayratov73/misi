@@ -46,20 +46,7 @@ bulimlar.addEventListener("click",()=>{
      
 
 
-      const swt = new Swiper("mySwiper2", {
-        slidesPerView: 1,
-        spaceBetween: 30,
-        loop: true,
-        freeMode: true,
-        pagination: {
-          el: ".swiper-pagination2",
-          clickable: true,
-        },
-        navigation: {
-          nextEl: "a2-next",
-          prevEl: "a7-prev",
-        },
-      });
+    
      
 
 
@@ -276,4 +263,55 @@ console.log(server);
         });
       
       });
+
+
+      const swiper1 = new Swiper(".mySwiper2", {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        navigation: {
+          nextEl: ".swiper-button-prev",
+          prevEl: ".swiper-button-next",
+        },
+        breakpoints: {
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 4,
+            spaceBetween: 40,
+          },
+          1024: {
+            slidesPerView: 5,
+            spaceBetween: 50,
+          },
+        },
+      });
+
+
+      const swiper2 = new Swiper(".mySwiper3", {
+        slidesPerView: 1,
+        spaceBetween: 8,
+        navigation: {
+          nextEl: ".swiper-button-prev",
+          prevEl: ".swiper-button-next",
+        },
+        breakpoints: {
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 4,
+            spaceBetween: 40,
+          },
+          1024: {
+            slidesPerView: 5,
+            spaceBetween: 50,
+          },
+        },
+      });
+
+
       
+   
