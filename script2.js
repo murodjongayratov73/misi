@@ -62,3 +62,37 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    const input = document.querySelector(".ffff input");
+    const btn = document.querySelector(".btn-f");
+  
+    btn.addEventListener("click", () => {
+      const email = input.value.trim();
+  
+      const emailOk =
+        email.includes("@") &&
+        email.includes(".") &&
+        email.length >= 10 &&
+        email.length <= 30;
+  
+      if (emailOk) {
+        input.style.border = "2px solid green";
+  
+        setTimeout(() => {
+          input.value = "";
+          input.style.border = "2px solid #ccc";
+        }, 500);
+  
+      } else {
+        input.style.border = "2px solid red";
+      }
+    });
+  
+  });
+
+
+  
+
+
